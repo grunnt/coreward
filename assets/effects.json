@@ -1,0 +1,173 @@
+[
+{
+	name: "hit",
+	emitters: [
+		{
+			size: {
+				min: 20,
+				max: 49
+			},
+			colorR: {
+				min: 0.55,
+				max: 0.55
+			},
+			colorG: {
+				min: 0.35,
+				max: 0.35
+			},
+			colorB: {
+				min: 0.2,
+				max: 0.2
+			},
+			life: {
+				min: 0.5,
+				max: 0.5
+			},
+			velocity: {
+				min: 1,
+				max: 177
+			},
+			delay: 0,
+			duration: 0.05,
+			particlesPerSecond: 300,
+			continuous: false,
+			spreadX: 0,
+			angle: 0,
+			angleDelta: 6.2831855,
+			textureNames: [
+				"flash_1",
+				"flash_2",
+				"flash_3"
+			],
+			particlePoolSize: 10000
+		}
+	]
+},
+{
+	name: "module-explosion",
+	emitters: [
+		{
+			size: {
+				min: 94,
+				max: 256
+			},
+			colorR: {
+				min: 0.55,
+				max: 0.55
+			},
+			colorG: {
+				min: 0.2,
+				max: 0.35
+			},
+			colorB: {
+				min: 0.15,
+				max: 0.2
+			},
+			life: {
+				min: 0.75,
+				max: 0.75
+			},
+			velocity: {
+				min: 1,
+				max: 251
+			},
+			delay: 0,
+			duration: 0.2,
+			particlesPerSecond: 91,
+			continuous: false,
+			spreadX: 0,
+			angle: 0.034906585,
+			angleDelta: 6.2831855,
+			textureNames: [
+				"flame_1",
+				"flame_2",
+				"flame_3"
+			],
+			particlePoolSize: 10000
+		},
+		{
+			size: {
+				min: 1,
+				max: 1
+			},
+			colorR: {
+				min: 0.45000002,
+				max: 0.45000002
+			},
+			colorG: {
+				min: 0.45000002,
+				max: 0.45000002
+			},
+			colorB: {
+				min: 0.4,
+				max: 0.4
+			},
+			life: {
+				min: 0.15,
+				max: 0.15
+			},
+			velocity: {
+				min: 1,
+				max: 4
+			},
+			delay: 0.15,
+			duration: 0.2,
+			particlesPerSecond: 220,
+			continuous: false,
+			spreadX: 0,
+			angle: 0.034906585,
+			angleDelta: 3.1415927,
+			textureNames: [
+				"cloud_1",
+				"cloud_2",
+				"cloud_3"
+			],
+			particlePoolSize: 10000
+		}
+	]
+},
+{
+	name: "thruster",
+	emitters: [
+		{
+			size: {
+				min: 116,
+				max: 134
+			},
+			colorR: {
+				min: 0.15,
+				max: 0.7
+			},
+			colorG: {
+				min: 0.4,
+				max: 0.55
+			},
+			colorB: {
+				min: 0.7,
+				max: 0.7
+			},
+			life: {
+				min: 0.35,
+				max: 0.35
+			},
+			velocity: {
+				min: 1,
+				max: 530
+			},
+			delay: 0,
+			duration: 0.05,
+			particlesPerSecond: 106,
+			continuous: true,
+			spreadX: 0,
+			angle: 0.034906585,
+			angleDelta: 0,
+			textureNames: [
+				"flame_1",
+				"flame_2",
+				"flame_3"
+			],
+			particlePoolSize: 10000
+		}
+	]
+}
+]

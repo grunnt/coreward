@@ -1,0 +1,27 @@
+
+background.png
+size: 512, 512
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+backtile_1
+  rotate: false
+  xy: 2, 7
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+dust_1
+  rotate: false
+  xy: 2, 2
+  size: 3, 3
+  orig: 3, 3
+  offset: 0, 0
+  index: -1
+dust_2
+  rotate: false
+  xy: 260, 260
+  size: 3, 3
+  orig: 3, 3
+  offset: 0, 0
+  index: -1

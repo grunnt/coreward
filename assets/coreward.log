@@ -1,0 +1,587 @@
+[INFO 2022.06.10 09:09:09] *** Startup ***
+[INFO 2022.06.10 09:09:10] Assests loaded
+[ERROR 2022.06.10 09:09:13] Uncaught exception:
+com.badlogic.gdx.utils.GdxRuntimeException: java.lang.NoSuchMethodError: 'void org.lwjgl.opengl.GL20.glUniformMatrix4(int, boolean, java.nio.FloatBuffer)'
+	at com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application.<init>(Lwjgl3Application.java:172)
+	at dev.basvs.coreward.DesktopLauncher.main(DesktopLauncher.java:18)
+Caused by: java.lang.NoSuchMethodError: 'void org.lwjgl.opengl.GL20.glUniformMatrix4(int, boolean, java.nio.FloatBuffer)'
+	at dev.basvs.coreward.combat.effects.PointParticleEffects.render(EffectsManager.java:346)
+	at dev.basvs.coreward.combat.CombatScreen.onRender(CombatScreen.java:129)
+	at dev.basvs.lib.game.AbstractScreen.render(AbstractScreen.java:102)
+	at dev.basvs.lib.game.AbstractGame.render(AbstractGame.java:238)
+	at com.badlogic.gdx.backends.lwjgl3.Lwjgl3Window.update(Lwjgl3Window.java:387)
+	at com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application.loop(Lwjgl3Application.java:192)
+	at com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application.<init>(Lwjgl3Application.java:166)
+	... 1 more
+[INFO 2022.06.10 09:11:10] *** Startup ***
+[INFO 2022.06.10 09:11:12] Assests loaded
+[ERROR 2022.06.10 09:11:13] Uncaught exception:
+com.badlogic.gdx.utils.GdxRuntimeException: java.lang.NoSuchMethodError: 'void org.lwjgl.opengl.GL20.glUniformMatrix4(int, boolean, java.nio.FloatBuffer)'
+	at com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application.<init>(Lwjgl3Application.java:172)
+	at dev.basvs.coreward.DesktopLauncher.main(DesktopLauncher.java:18)
+Caused by: java.lang.NoSuchMethodError: 'void org.lwjgl.opengl.GL20.glUniformMatrix4(int, boolean, java.nio.FloatBuffer)'
+	at dev.basvs.coreward.combat.effects.PointParticleEffects.render(EffectsManager.java:346)
+	at dev.basvs.coreward.combat.CombatScreen.onRender(CombatScreen.java:129)
+	at dev.basvs.lib.game.AbstractScreen.render(AbstractScreen.java:102)
+	at dev.basvs.lib.game.AbstractGame.render(AbstractGame.java:238)
+	at com.badlogic.gdx.backends.lwjgl3.Lwjgl3Window.update(Lwjgl3Window.java:387)
+	at com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application.loop(Lwjgl3Application.java:192)
+	at com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application.<init>(Lwjgl3Application.java:166)
+	... 1 more
+[INFO 2022.06.10 11:55:06] *** Startup ***
+[INFO 2022.06.10 11:55:08] Assests loaded
+[ERROR 2022.06.10 11:55:12] Uncaught exception:
+java.lang.NullPointerException: Cannot read field "maximumCount" because "this.def" is null
+	at dev.basvs.coreward.combat.effects.ParticleEmitter.<init>(ParticleEmitter.java:41)
+	at dev.basvs.coreward.combat.effects.PointParticleEffects.getEmitterFromPool(PointParticleEffects.java:143)
+	at dev.basvs.coreward.combat.effects.PointParticleEffects.start(PointParticleEffects.java:102)
+	at dev.basvs.tools.EffectMakerScreen.handleTouchDown(EffectMakerScreen.java:559)
+	at dev.basvs.lib.game.AbstractScreen.touchDown(AbstractScreen.java:138)
+	at com.badlogic.gdx.input.GestureDetector.touchDown(GestureDetector.java:137)
+	at com.badlogic.gdx.input.GestureDetector.touchDown(GestureDetector.java:102)
+	at com.badlogic.gdx.InputMultiplexer.touchDown(InputMultiplexer.java:113)
+	at com.badlogic.gdx.InputMultiplexer.touchDown(InputMultiplexer.java:113)
+	at com.badlogic.gdx.InputEventQueue.drain(InputEventQueue.java:67)
+	at com.badlogic.gdx.backends.lwjgl3.DefaultLwjgl3Input.update(DefaultLwjgl3Input.java:189)
+	at com.badlogic.gdx.backends.lwjgl3.Lwjgl3Window.update(Lwjgl3Window.java:378)
+	at com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application.loop(Lwjgl3Application.java:192)
+	at com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application.<init>(Lwjgl3Application.java:166)
+	at dev.basvs.coreward.DesktopLauncher.main(DesktopLauncher.java:18)
+[INFO 2022.06.10 11:58:59] *** Startup ***
+[INFO 2022.06.10 11:59:00] Assests loaded
+[ERROR 2022.06.10 11:59:01] Uncaught exception:
+java.lang.NullPointerException: Cannot invoke "dev.basvs.coreward.combat.effects.ParticleEmitterSource.getPosition()" because "emitterSource" is null
+	at dev.basvs.coreward.combat.effects.ParticleEmitter.start(ParticleEmitter.java:65)
+	at dev.basvs.coreward.combat.effects.ParticleEmitter.start(ParticleEmitter.java:51)
+	at dev.basvs.coreward.combat.effects.PointParticleEffects.start(PointParticleEffects.java:103)
+	at dev.basvs.tools.EffectMakerScreen.handleTouchDown(EffectMakerScreen.java:559)
+	at dev.basvs.lib.game.AbstractScreen.touchDown(AbstractScreen.java:138)
+	at com.badlogic.gdx.input.GestureDetector.touchDown(GestureDetector.java:137)
+	at com.badlogic.gdx.input.GestureDetector.touchDown(GestureDetector.java:102)
+	at com.badlogic.gdx.InputMultiplexer.touchDown(InputMultiplexer.java:113)
+	at com.badlogic.gdx.InputMultiplexer.touchDown(InputMultiplexer.java:113)
+	at com.badlogic.gdx.InputEventQueue.drain(InputEventQueue.java:67)
+	at com.badlogic.gdx.backends.lwjgl3.DefaultLwjgl3Input.update(DefaultLwjgl3Input.java:189)
+	at com.badlogic.gdx.backends.lwjgl3.Lwjgl3Window.update(Lwjgl3Window.java:378)
+	at com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application.loop(Lwjgl3Application.java:192)
+	at com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application.<init>(Lwjgl3Application.java:166)
+	at dev.basvs.coreward.DesktopLauncher.main(DesktopLauncher.java:18)
+[INFO 2022.06.10 11:59:42] *** Startup ***
+[INFO 2022.06.10 11:59:43] Assests loaded
+[INFO 2022.06.10 12:01:35] *** Startup ***
+[INFO 2022.06.10 12:01:36] Assests loaded
+[INFO 2022.06.10 12:02:50] *** Startup ***
+[INFO 2022.06.10 12:02:51] Assests loaded
+[INFO 2022.06.10 12:03:22] *** Startup ***
+[INFO 2022.06.10 12:03:24] Assests loaded
+[ERROR 2022.06.10 12:03:25] Uncaught exception:
+java.lang.NullPointerException: Cannot read field "texture" because "region" is null
+	at com.badlogic.gdx.graphics.g2d.TextureRegion.setRegion(TextureRegion.java:113)
+	at com.badlogic.gdx.graphics.g2d.Sprite.<init>(Sprite.java:82)
+	at dev.basvs.coreward.combat.effects.ParticleEmitter$Particle.<init>(ParticleEmitter.java:183)
+	at dev.basvs.coreward.combat.effects.ParticleEmitter.start(ParticleEmitter.java:78)
+	at dev.basvs.coreward.combat.effects.ParticleEmitter.start(ParticleEmitter.java:51)
+	at dev.basvs.coreward.combat.effects.PointParticleEffects.start(PointParticleEffects.java:103)
+	at dev.basvs.tools.EffectMakerScreen.handleTouchDown(EffectMakerScreen.java:559)
+	at dev.basvs.lib.game.AbstractScreen.touchDown(AbstractScreen.java:138)
+	at com.badlogic.gdx.input.GestureDetector.touchDown(GestureDetector.java:137)
+	at com.badlogic.gdx.input.GestureDetector.touchDown(GestureDetector.java:102)
+	at com.badlogic.gdx.InputMultiplexer.touchDown(InputMultiplexer.java:113)
+	at com.badlogic.gdx.InputMultiplexer.touchDown(InputMultiplexer.java:113)
+	at com.badlogic.gdx.InputEventQueue.drain(InputEventQueue.java:67)
+	at com.badlogic.gdx.backends.lwjgl3.DefaultLwjgl3Input.update(DefaultLwjgl3Input.java:189)
+	at com.badlogic.gdx.backends.lwjgl3.Lwjgl3Window.update(Lwjgl3Window.java:378)
+	at com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application.loop(Lwjgl3Application.java:192)
+	at com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application.<init>(Lwjgl3Application.java:166)
+	at dev.basvs.coreward.DesktopLauncher.main(DesktopLauncher.java:18)
+[INFO 2022.06.10 12:04:14] *** Startup ***
+[INFO 2022.06.10 12:04:15] Assests loaded
+[INFO 2022.06.10 12:07:40] *** Startup ***
+[INFO 2022.06.10 12:07:41] Assests loaded
+[INFO 2022.06.10 12:08:14] *** Startup ***
+[INFO 2022.06.10 12:08:16] Assests loaded
+[INFO 2022.06.10 12:12:03] *** Startup ***
+[INFO 2022.06.10 12:12:04] Assests loaded
+[INFO 2022.06.10 12:12:39] *** Startup ***
+[INFO 2022.06.10 12:12:40] Assests loaded
+[INFO 2022.06.10 12:13:52] *** Startup ***
+[INFO 2022.06.10 12:13:54] Assests loaded
+[INFO 2022.06.10 12:14:45] *** Startup ***
+[INFO 2022.06.10 12:14:47] Assests loaded
+[INFO 2022.06.10 12:17:06] *** Startup ***
+[INFO 2022.06.10 12:17:08] Assests loaded
+[ERROR 2022.06.10 12:20:34] Uncaught exception:
+java.lang.IndexOutOfBoundsException: index can't be > size: 2 > 1
+	at com.badlogic.gdx.utils.Array.insert(Array.java:165)
+	at dev.basvs.tools.EffectMakerScreen$3.clicked(EffectMakerScreen.java:172)
+	at com.badlogic.gdx.scenes.scene2d.utils.ClickListener.touchUp(ClickListener.java:88)
+	at com.badlogic.gdx.scenes.scene2d.InputListener.handle(InputListener.java:71)
+	at com.badlogic.gdx.scenes.scene2d.Stage.touchUp(Stage.java:355)
+	at com.badlogic.gdx.InputMultiplexer.touchUp(InputMultiplexer.java:124)
+	at com.badlogic.gdx.InputEventQueue.drain(InputEventQueue.java:70)
+	at com.badlogic.gdx.backends.lwjgl3.DefaultLwjgl3Input.update(DefaultLwjgl3Input.java:189)
+	at com.badlogic.gdx.backends.lwjgl3.Lwjgl3Window.update(Lwjgl3Window.java:378)
+	at com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application.loop(Lwjgl3Application.java:192)
+	at com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application.<init>(Lwjgl3Application.java:166)
+	at dev.basvs.coreward.DesktopLauncher.main(DesktopLauncher.java:18)
+[INFO 2022.06.10 16:24:45] *** Startup ***
+[INFO 2022.06.10 16:24:46] Assests loaded
+[INFO 2022.06.10 16:43:44] *** Startup ***
+[INFO 2022.06.10 16:43:45] Assests loaded
+[INFO 2022.06.10 16:45:18] *** Startup ***
+[INFO 2022.06.10 16:45:20] Assests loaded
+[INFO 2022.06.10 16:48:48] *** Startup ***
+[INFO 2022.06.10 16:48:49] Assests loaded
+[INFO 2022.06.10 16:49:32] *** Startup ***
+[INFO 2022.06.10 16:49:34] Assests loaded
+[INFO 2022.06.10 16:51:35] *** Startup ***
+[INFO 2022.06.10 16:51:37] Assests loaded
+[INFO 2022.06.10 16:52:18] *** Startup ***
+[INFO 2022.06.10 16:52:19] Assests loaded
+[INFO 2022.06.11 21:28:10] *** Startup ***
+[INFO 2022.06.11 21:28:12] Assests loaded
+[INFO 2022.06.12 21:32:30] *** Startup ***
+[INFO 2022.06.12 21:32:32] Assests loaded
+[INFO 2022.06.12 21:34:34] *** Startup ***
+[INFO 2022.06.12 21:34:35] Assests loaded
+[INFO 2022.06.12 21:35:30] *** Startup ***
+[INFO 2022.06.12 21:35:32] Assests loaded
+[INFO 2022.06.12 21:39:12] *** Startup ***
+[INFO 2022.06.12 21:39:13] Assests loaded
+[INFO 2022.06.12 21:41:43] *** Startup ***
+[INFO 2022.06.12 21:41:45] Assests loaded
+[INFO 2022.06.12 21:42:20] *** Startup ***
+[INFO 2022.06.12 21:42:21] Assests loaded
+[INFO 2022.06.12 21:46:22] *** Startup ***
+[INFO 2022.06.12 21:46:23] Assests loaded
+[INFO 2022.06.12 21:46:47] *** Startup ***
+[INFO 2022.06.12 21:46:48] Assests loaded
+[INFO 2022.06.12 21:48:45] *** Startup ***
+[INFO 2022.06.12 21:48:46] Assests loaded
+[INFO 2022.06.12 21:49:35] *** Startup ***
+[INFO 2022.06.12 21:49:37] Assests loaded
+[INFO 2022.06.12 21:55:03] *** Startup ***
+[INFO 2022.06.12 21:55:05] Assests loaded
+[INFO 2022.06.13 16:47:39] *** Startup ***
+[INFO 2022.06.13 16:47:41] Assests loaded
+[INFO 2022.06.13 16:51:00] *** Startup ***
+[INFO 2022.06.13 16:51:02] Assests loaded
+[INFO 2022.06.13 16:55:28] *** Startup ***
+[INFO 2022.06.13 16:55:30] Assests loaded
+[INFO 2022.06.13 16:56:44] filename selected for saving: weaponless
+[INFO 2022.06.13 16:56:51] filename selected for saving: enemy
+[INFO 2022.06.13 16:58:22] *** Startup ***
+[INFO 2022.06.13 16:58:23] Assests loaded
+[INFO 2022.06.13 16:58:30] file selected for loading: weaponless
+[INFO 2022.06.13 16:59:49] filename selected for saving: enemy
+[INFO 2022.06.13 16:59:56] file selected for loading: weaponless
+[INFO 2022.06.13 17:02:07] *** Startup ***
+[INFO 2022.06.13 17:02:08] Assests loaded
+[INFO 2022.06.13 17:02:14] file selected for loading: weaponless
+[INFO 2022.06.13 17:04:56] *** Startup ***
+[INFO 2022.06.13 17:04:57] Assests loaded
+[INFO 2022.06.13 17:05:02] file selected for loading: weaponless
+[INFO 2022.06.13 19:38:31] *** Startup ***
+[INFO 2022.06.13 19:38:33] Assests loaded
+[INFO 2022.06.13 19:41:35] *** Startup ***
+[INFO 2022.06.13 19:41:36] Assests loaded
+[INFO 2022.06.13 19:42:47] *** Startup ***
+[INFO 2022.06.13 19:42:48] Assests loaded
+[INFO 2022.06.13 21:14:54] *** Startup ***
+[INFO 2022.06.13 21:14:55] Assests loaded
+[INFO 2022.06.13 21:15:50] *** Startup ***
+[INFO 2022.06.13 21:15:51] Assests loaded
+[INFO 2022.06.13 21:16:10] *** Startup ***
+[INFO 2022.06.13 21:16:12] Assests loaded
+[INFO 2022.06.13 21:17:16] *** Startup ***
+[INFO 2022.06.13 21:17:17] Assests loaded
+[INFO 2022.06.13 21:17:55] *** Startup ***
+[INFO 2022.06.13 21:17:57] Assests loaded
+[INFO 2022.06.13 21:20:51] *** Startup ***
+[INFO 2022.06.13 21:20:53] Assests loaded
+[INFO 2022.06.13 21:22:30] *** Startup ***
+[INFO 2022.06.13 21:22:31] Assests loaded
+[INFO 2022.06.13 21:23:01] *** Startup ***
+[INFO 2022.06.13 21:23:03] Assests loaded
+[INFO 2022.06.13 21:25:58] *** Startup ***
+[INFO 2022.06.13 21:25:59] Assests loaded
+[INFO 2022.06.13 21:26:31] *** Startup ***
+[INFO 2022.06.13 21:26:32] Assests loaded
+[INFO 2022.06.13 21:27:59] *** Startup ***
+[INFO 2022.06.13 21:28:00] Assests loaded
+[INFO 2022.06.13 21:28:41] *** Startup ***
+[INFO 2022.06.13 21:28:43] Assests loaded
+[INFO 2022.06.13 21:32:42] *** Startup ***
+[INFO 2022.06.13 21:32:43] Assests loaded
+[INFO 2022.06.13 21:36:35] *** Startup ***
+[INFO 2022.06.13 21:36:36] Assests loaded
+[INFO 2022.06.13 21:41:35] *** Startup ***
+[INFO 2022.06.13 21:41:36] Assests loaded
+[INFO 2022.06.13 21:42:50] *** Startup ***
+[INFO 2022.06.13 21:42:52] Assests loaded
+[INFO 2022.06.13 21:43:19] *** Startup ***
+[INFO 2022.06.13 21:43:21] Assests loaded
+[INFO 2022.06.13 21:43:37] *** Startup ***
+[INFO 2022.06.13 21:43:39] Assests loaded
+[INFO 2022.06.13 21:44:20] *** Startup ***
+[INFO 2022.06.13 21:44:21] Assests loaded
+[INFO 2022.06.13 21:44:46] *** Startup ***
+[INFO 2022.06.13 21:44:47] Assests loaded
+[INFO 2022.06.13 21:46:43] *** Startup ***
+[INFO 2022.06.13 21:46:45] Assests loaded
+[INFO 2022.06.13 21:47:39] *** Startup ***
+[INFO 2022.06.13 21:47:40] Assests loaded
+[INFO 2022.06.13 21:48:42] *** Startup ***
+[INFO 2022.06.13 21:48:44] Assests loaded
+[INFO 2022.06.13 21:50:56] *** Startup ***
+[INFO 2022.06.13 21:50:57] Assests loaded
+[INFO 2022.06.13 21:51:07] *** Startup ***
+[INFO 2022.06.13 21:51:08] Assests loaded
+[INFO 2022.06.14 19:31:05] *** Startup ***
+[INFO 2022.06.14 19:31:06] Assests loaded
+[INFO 2022.06.14 20:41:26] *** Startup ***
+[INFO 2022.06.14 20:41:27] Assests loaded
+[INFO 2022.06.14 20:44:23] *** Startup ***
+[INFO 2022.06.14 20:44:24] Assests loaded
+[INFO 2022.06.14 20:46:39] *** Startup ***
+[INFO 2022.06.14 20:46:41] Assests loaded
+[INFO 2022.06.14 20:47:12] *** Startup ***
+[INFO 2022.06.14 20:47:13] Assests loaded
+[INFO 2022.06.14 20:47:46] *** Startup ***
+[INFO 2022.06.14 20:47:48] Assests loaded
+[INFO 2022.06.14 20:49:52] *** Startup ***
+[INFO 2022.06.14 20:49:53] Assests loaded
+[INFO 2022.06.14 20:50:41] *** Startup ***
+[INFO 2022.06.14 20:50:42] Assests loaded
+[INFO 2022.06.14 20:51:02] *** Startup ***
+[INFO 2022.06.14 20:51:04] Assests loaded
+[INFO 2022.06.14 20:57:38] *** Startup ***
+[INFO 2022.06.14 20:57:39] Assests loaded
+[INFO 2022.06.14 20:58:14] *** Startup ***
+[INFO 2022.06.14 20:58:15] Assests loaded
+[INFO 2022.06.14 20:58:34] *** Startup ***
+[INFO 2022.06.14 20:58:35] Assests loaded
+[INFO 2022.06.14 20:59:00] *** Startup ***
+[INFO 2022.06.14 20:59:01] Assests loaded
+[INFO 2022.06.14 21:00:59] *** Startup ***
+[INFO 2022.06.14 21:01:00] Assests loaded
+[INFO 2022.06.14 21:01:36] *** Startup ***
+[INFO 2022.06.14 21:01:37] Assests loaded
+[INFO 2022.06.14 21:03:07] *** Startup ***
+[INFO 2022.06.14 21:03:09] Assests loaded
+[INFO 2022.06.14 21:03:57] *** Startup ***
+[INFO 2022.06.14 21:03:59] Assests loaded
+[INFO 2022.06.14 21:04:33] *** Startup ***
+[INFO 2022.06.14 21:04:34] Assests loaded
+[INFO 2022.06.14 21:05:57] *** Startup ***
+[INFO 2022.06.14 21:05:59] Assests loaded
+[INFO 2022.06.14 21:06:48] *** Startup ***
+[INFO 2022.06.14 21:06:49] Assests loaded
+[INFO 2022.06.14 21:07:21] *** Startup ***
+[INFO 2022.06.14 21:07:23] Assests loaded
+[INFO 2022.06.15 12:02:05] *** Startup ***
+[INFO 2022.06.15 12:02:06] Assests loaded
+[INFO 2022.06.15 12:03:50] *** Startup ***
+[INFO 2022.06.15 12:03:51] Assests loaded
+[INFO 2022.06.15 12:09:20] *** Startup ***
+[INFO 2022.06.15 12:09:21] Assests loaded
+[INFO 2022.06.15 12:18:29] *** Startup ***
+[INFO 2022.06.15 12:18:30] Assests loaded
+[INFO 2022.06.15 12:19:24] *** Startup ***
+[INFO 2022.06.15 12:19:25] Assests loaded
+[INFO 2022.06.15 12:20:55] *** Startup ***
+[INFO 2022.06.15 12:20:56] Assests loaded
+[INFO 2022.06.15 12:21:15] *** Startup ***
+[INFO 2022.06.15 12:21:16] Assests loaded
+[INFO 2022.06.15 12:28:33] *** Startup ***
+[INFO 2022.06.15 12:28:34] Assests loaded
+[ERROR 2022.06.15 12:28:37] Uncaught exception:
+java.lang.RuntimeException: Actor: TextButton: Test
+	at com.badlogic.gdx.scenes.scene2d.Actor.notify(Actor.java:192)
+	at com.badlogic.gdx.scenes.scene2d.Actor.fire(Actor.java:152)
+	at com.badlogic.gdx.scenes.scene2d.ui.Button.setChecked(Button.java:125)
+	at com.badlogic.gdx.scenes.scene2d.ui.Button$1.clicked(Button.java:93)
+	at com.badlogic.gdx.scenes.scene2d.utils.ClickListener.touchUp(ClickListener.java:88)
+	at com.badlogic.gdx.scenes.scene2d.InputListener.handle(InputListener.java:71)
+	at com.badlogic.gdx.scenes.scene2d.Stage.touchUp(Stage.java:355)
+	at com.badlogic.gdx.InputMultiplexer.touchUp(InputMultiplexer.java:124)
+	at com.badlogic.gdx.InputEventQueue.drain(InputEventQueue.java:70)
+	at com.badlogic.gdx.backends.lwjgl3.DefaultLwjgl3Input.update(DefaultLwjgl3Input.java:189)
+	at com.badlogic.gdx.backends.lwjgl3.Lwjgl3Window.update(Lwjgl3Window.java:378)
+	at com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application.loop(Lwjgl3Application.java:192)
+	at com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application.<init>(Lwjgl3Application.java:166)
+	at dev.basvs.coreward.DesktopLauncher.main(DesktopLauncher.java:18)
+Caused by: com.badlogic.gdx.utils.SerializationException: Field not found: textureName (dev.basvs.coreward.combat.effects.ParticleEmitterDef)
+Serialization trace:
+[][0].emitters[0].textureName
+emitters (dev.basvs.coreward.combat.effects.ParticleEffect)
+	at com.badlogic.gdx.utils.Json.readFields(Json.java:898)
+	at com.badlogic.gdx.utils.Json.readValue(Json.java:1079)
+	at com.badlogic.gdx.utils.Json.readValue(Json.java:1102)
+	at com.badlogic.gdx.utils.Json.readFields(Json.java:907)
+	at com.badlogic.gdx.utils.Json.readValue(Json.java:1079)
+	at com.badlogic.gdx.utils.Json.readValue(Json.java:1114)
+	at com.badlogic.gdx.utils.Json.fromJson(Json.java:794)
+	at dev.basvs.coreward.combat.effects.PointParticleEffects.loadRepo(PointParticleEffects.java:53)
+	at dev.basvs.coreward.combat.effects.PointParticleEffects.<init>(PointParticleEffects.java:43)
+	at dev.basvs.coreward.combat.CombatScreen.<init>(CombatScreen.java:59)
+	at dev.basvs.coreward.design.ShipDesignScreen$6.changed(ShipDesignScreen.java:302)
+	at com.badlogic.gdx.scenes.scene2d.utils.ChangeListener.handle(ChangeListener.java:28)
+	at com.badlogic.gdx.scenes.scene2d.Actor.notify(Actor.java:188)
+	... 13 more
+[INFO 2022.06.15 12:28:56] *** Startup ***
+[INFO 2022.06.15 12:28:57] Assests loaded
+[INFO 2022.06.15 12:30:07] *** Startup ***
+[INFO 2022.06.15 12:30:08] Assests loaded
+[INFO 2022.06.15 12:31:55] filename selected for saving: default
+[INFO 2022.06.15 12:33:48] *** Startup ***
+[INFO 2022.06.15 12:33:49] Assests loaded
+[INFO 2022.06.15 12:35:08] *** Startup ***
+[INFO 2022.06.15 12:35:10] Assests loaded
+[INFO 2022.06.15 12:49:43] *** Startup ***
+[INFO 2022.06.15 12:49:45] Assests loaded
+[INFO 2022.06.15 12:52:20] *** Startup ***
+[INFO 2022.06.15 12:52:22] Assests loaded
+[INFO 2022.06.15 12:53:20] *** Startup ***
+[INFO 2022.06.15 12:53:22] Assests loaded
+[INFO 2022.06.15 12:53:28] filename selected for saving: enemy
+[INFO 2022.06.15 12:55:23] *** Startup ***
+[INFO 2022.06.15 12:55:25] Assests loaded
+[INFO 2022.06.15 12:56:15] *** Startup ***
+[INFO 2022.06.15 12:56:17] Assests loaded
+[INFO 2022.06.15 12:59:10] filename selected for saving: default
+[INFO 2022.06.15 13:01:07] *** Startup ***
+[INFO 2022.06.15 13:01:08] Assests loaded
+[INFO 2022.06.15 20:05:52] *** Startup ***
+[INFO 2022.06.15 20:05:53] Assests loaded
+[INFO 2022.06.15 21:07:24] *** Startup ***
+[INFO 2022.06.15 21:07:26] Assests loaded
+[INFO 2022.06.15 21:10:46] file selected for loading: brutus
+[INFO 2022.06.16 17:01:52] *** Startup ***
+[INFO 2022.06.16 17:01:54] Assests loaded
+[INFO 2022.06.16 17:04:05] *** Startup ***
+[INFO 2022.06.16 17:04:06] Assests loaded
+[INFO 2022.06.16 17:04:34] *** Startup ***
+[INFO 2022.06.16 17:04:35] Assests loaded
+[INFO 2022.06.16 17:09:38] *** Startup ***
+[INFO 2022.06.16 17:09:39] Assests loaded
+[INFO 2022.06.16 17:12:54] *** Startup ***
+[INFO 2022.06.16 17:12:55] Assests loaded
+[INFO 2022.06.16 21:48:10] *** Startup ***
+[INFO 2022.06.16 21:48:12] Assests loaded
+[INFO 2022.06.16 21:49:55] *** Startup ***
+[INFO 2022.06.16 21:49:57] Assests loaded
+[INFO 2022.06.16 21:54:02] *** Startup ***
+[INFO 2022.06.16 21:54:03] Assests loaded
+[INFO 2022.06.16 21:55:26] *** Startup ***
+[INFO 2022.06.16 21:55:28] Assests loaded
+[INFO 2022.06.17 11:54:11] *** Startup ***
+[INFO 2022.06.17 11:54:13] Assests loaded
+[INFO 2022.06.17 11:54:40] *** Startup ***
+[INFO 2022.06.17 11:54:42] Assests loaded
+[INFO 2022.06.17 11:57:44] *** Startup ***
+[INFO 2022.06.17 11:57:45] Assests loaded
+[INFO 2022.06.17 11:58:10] *** Startup ***
+[INFO 2022.06.17 11:58:11] Assests loaded
+[INFO 2022.06.17 11:58:48] *** Startup ***
+[INFO 2022.06.17 11:58:50] Assests loaded
+[INFO 2022.06.17 11:59:05] *** Startup ***
+[INFO 2022.06.17 11:59:06] Assests loaded
+[INFO 2022.06.17 12:00:33] *** Startup ***
+[INFO 2022.06.17 12:00:34] Assests loaded
+[INFO 2022.06.17 12:00:51] *** Startup ***
+[INFO 2022.06.17 12:00:52] Assests loaded
+[INFO 2022.06.17 12:02:12] *** Startup ***
+[INFO 2022.06.17 12:02:13] Assests loaded
+[INFO 2022.06.17 12:02:40] *** Startup ***
+[INFO 2022.06.17 12:02:42] Assests loaded
+[INFO 2022.06.17 12:04:24] *** Startup ***
+[INFO 2022.06.17 12:04:25] Assests loaded
+[INFO 2022.06.17 12:05:04] *** Startup ***
+[INFO 2022.06.17 12:05:06] Assests loaded
+[INFO 2022.06.17 12:05:30] *** Startup ***
+[INFO 2022.06.17 12:05:31] Assests loaded
+[INFO 2022.06.17 12:10:11] *** Startup ***
+[INFO 2022.06.17 12:10:12] Assests loaded
+[INFO 2022.06.17 12:10:31] *** Startup ***
+[INFO 2022.06.17 12:10:32] Assests loaded
+[INFO 2022.06.17 12:12:33] *** Startup ***
+[INFO 2022.06.17 12:12:34] Assests loaded
+[INFO 2022.06.17 12:12:53] *** Startup ***
+[INFO 2022.06.17 12:12:54] Assests loaded
+[INFO 2022.06.17 12:14:11] *** Startup ***
+[INFO 2022.06.17 12:14:13] Assests loaded
+[INFO 2022.06.17 12:14:33] *** Startup ***
+[INFO 2022.06.17 12:14:34] Assests loaded
+[INFO 2022.06.17 12:15:07] *** Startup ***
+[INFO 2022.06.17 12:15:09] Assests loaded
+[INFO 2022.06.17 12:15:21] *** Startup ***
+[INFO 2022.06.17 12:15:22] Assests loaded
+[INFO 2022.06.17 12:16:07] *** Startup ***
+[INFO 2022.06.17 12:16:08] Assests loaded
+[INFO 2022.06.17 12:16:48] *** Startup ***
+[INFO 2022.06.17 12:16:50] Assests loaded
+[INFO 2022.06.17 12:16:57] *** Startup ***
+[INFO 2022.06.17 12:16:58] Assests loaded
+[INFO 2022.06.17 12:19:57] *** Startup ***
+[INFO 2022.06.17 12:19:59] Assests loaded
+[INFO 2022.06.17 12:21:00] *** Startup ***
+[INFO 2022.06.17 12:21:02] Assests loaded
+[INFO 2022.06.17 12:22:28] *** Startup ***
+[INFO 2022.06.17 12:22:30] Assests loaded
+[INFO 2022.06.17 12:25:00] *** Startup ***
+[INFO 2022.06.17 12:25:02] Assests loaded
+[INFO 2022.06.17 12:29:14] *** Startup ***
+[INFO 2022.06.17 12:29:16] Assests loaded
+[INFO 2022.06.17 12:29:52] *** Startup ***
+[INFO 2022.06.17 12:29:53] Assests loaded
+[INFO 2022.06.17 12:30:38] *** Startup ***
+[INFO 2022.06.17 12:30:39] Assests loaded
+[INFO 2022.06.17 12:31:27] *** Startup ***
+[INFO 2022.06.17 12:31:29] Assests loaded
+[INFO 2022.06.17 12:33:09] *** Startup ***
+[INFO 2022.06.17 12:33:11] Assests loaded
+[INFO 2022.06.17 12:34:08] *** Startup ***
+[INFO 2022.06.17 12:34:09] Assests loaded
+[INFO 2022.06.17 12:35:27] *** Startup ***
+[INFO 2022.06.17 12:35:29] Assests loaded
+[INFO 2022.06.17 14:11:33] *** Startup ***
+[INFO 2022.06.17 14:11:34] Assests loaded
+[INFO 2022.06.17 14:12:34] *** Startup ***
+[INFO 2022.06.17 14:12:35] Assests loaded
+[INFO 2022.06.17 14:15:05] *** Startup ***
+[INFO 2022.06.17 14:15:07] Assests loaded
+[INFO 2022.06.17 14:16:17] *** Startup ***
+[INFO 2022.06.17 14:16:19] Assests loaded
+[INFO 2022.06.17 14:16:57] *** Startup ***
+[INFO 2022.06.17 14:16:58] Assests loaded
+[INFO 2022.06.17 14:18:02] *** Startup ***
+[INFO 2022.06.17 14:18:03] Assests loaded
+[INFO 2022.06.17 14:19:51] *** Startup ***
+[INFO 2022.06.17 14:19:53] Assests loaded
+[INFO 2022.06.17 14:21:47] *** Startup ***
+[INFO 2022.06.17 14:21:49] Assests loaded
+[INFO 2022.06.17 14:26:58] *** Startup ***
+[INFO 2022.06.17 14:26:59] Assests loaded
+[INFO 2022.06.17 14:30:46] *** Startup ***
+[INFO 2022.06.17 14:30:47] Assests loaded
+[INFO 2022.06.17 15:19:49] *** Startup ***
+[INFO 2022.06.17 15:19:50] Assests loaded
+[INFO 2022.06.17 15:20:20] *** Startup ***
+[INFO 2022.06.17 15:20:21] Assests loaded
+[INFO 2022.06.17 15:22:32] *** Startup ***
+[INFO 2022.06.17 15:22:34] Assests loaded
+[INFO 2022.06.17 15:27:13] *** Startup ***
+[INFO 2022.06.17 15:27:14] Assests loaded
+[INFO 2022.06.17 19:54:17] *** Startup ***
+[INFO 2022.06.17 19:54:19] Assests loaded
+[INFO 2022.06.17 19:55:22] *** Startup ***
+[INFO 2022.06.17 19:55:23] Assests loaded
+[INFO 2022.06.17 19:55:39] *** Startup ***
+[INFO 2022.06.17 19:55:40] Assests loaded
+[INFO 2022.06.17 21:42:01] *** Startup ***
+[INFO 2022.06.17 21:42:03] Assests loaded
+[INFO 2022.06.17 21:43:36] *** Startup ***
+[INFO 2022.06.17 21:43:37] Assests loaded
+[INFO 2022.06.17 21:44:37] *** Startup ***
+[INFO 2022.06.17 21:44:39] Assests loaded
+[INFO 2022.06.17 21:47:31] *** Startup ***
+[INFO 2022.06.17 21:47:32] Assests loaded
+[INFO 2022.06.17 21:48:35] *** Startup ***
+[INFO 2022.06.17 21:48:36] Assests loaded
+[INFO 2022.06.17 21:56:41] *** Startup ***
+[INFO 2022.06.17 21:56:43] Assests loaded
+[INFO 2022.06.17 21:57:14] *** Startup ***
+[INFO 2022.06.17 21:57:15] Assests loaded
+[INFO 2022.06.17 21:57:38] *** Startup ***
+[INFO 2022.06.17 21:57:40] Assests loaded
+[INFO 2022.06.17 21:58:35] *** Startup ***
+[INFO 2022.06.17 21:58:37] Assests loaded
+[INFO 2022.06.17 22:00:52] *** Startup ***
+[INFO 2022.06.17 22:00:53] Assests loaded
+[INFO 2022.06.17 22:01:29] *** Startup ***
+[INFO 2022.06.17 22:01:30] Assests loaded
+[INFO 2022.06.17 22:02:17] *** Startup ***
+[INFO 2022.06.17 22:02:18] Assests loaded
+[INFO 2022.06.17 22:09:54] *** Startup ***
+[INFO 2022.06.17 22:09:55] Assests loaded
+[INFO 2022.06.17 22:10:46] *** Startup ***
+[INFO 2022.06.17 22:10:47] Assests loaded
+[INFO 2022.06.19 13:04:14] *** Startup ***
+[INFO 2022.06.19 13:04:15] Assests loaded
+[INFO 2022.06.19 13:07:59] *** Startup ***
+[INFO 2022.06.19 13:08:00] Assests loaded
+[INFO 2022.06.20 09:40:18] *** Startup ***
+[INFO 2022.06.20 09:40:20] Assests loaded
+[INFO 2022.06.20 09:41:08] *** Startup ***
+[INFO 2022.06.20 09:41:09] Assests loaded
+[INFO 2022.06.20 09:42:10] *** Startup ***
+[INFO 2022.06.20 09:42:11] Assests loaded
+[INFO 2022.06.20 10:23:24] *** Startup ***
+[INFO 2022.06.20 10:23:25] Assests loaded
+[INFO 2022.06.20 10:25:26] *** Startup ***
+[INFO 2022.06.20 10:25:27] Assests loaded
+[INFO 2022.06.20 10:26:16] *** Startup ***
+[INFO 2022.06.20 10:26:18] Assests loaded
+[INFO 2022.06.20 10:30:53] *** Startup ***
+[INFO 2022.06.20 10:30:54] Assests loaded
+[INFO 2022.06.20 10:32:45] *** Startup ***
+[INFO 2022.06.20 10:32:46] Assests loaded
+[INFO 2022.06.20 10:34:57] *** Startup ***
+[INFO 2022.06.20 10:34:58] Assests loaded
+[INFO 2022.06.21 20:34:49] *** Startup ***
+[INFO 2022.06.21 20:34:51] Assests loaded
+[INFO 2022.06.21 20:38:30] *** Startup ***
+[INFO 2022.06.21 20:38:31] Assests loaded
+[INFO 2022.06.21 20:40:17] *** Startup ***
+[INFO 2022.06.21 20:40:18] Assests loaded
+[INFO 2022.06.21 21:40:15] *** Startup ***
+[INFO 2022.06.21 21:40:16] Assests loaded
+[INFO 2022.06.21 21:45:38] *** Startup ***
+[INFO 2022.06.21 21:45:40] Assests loaded
+[INFO 2022.06.21 21:45:51] *** Startup ***
+[INFO 2022.06.21 21:45:52] Assests loaded
+[INFO 2022.06.21 21:47:27] *** Startup ***
+[INFO 2022.06.21 21:47:29] Assests loaded
+[INFO 2022.06.21 21:52:42] *** Startup ***
+[INFO 2022.06.21 21:52:43] Assests loaded
+[INFO 2022.06.21 21:54:14] *** Startup ***
+[INFO 2022.06.21 21:54:15] Assests loaded
+[INFO 2022.06.21 21:54:38] *** Startup ***
+[INFO 2022.06.21 21:54:39] Assests loaded
+[INFO 2022.06.21 21:54:54] *** Startup ***
+[INFO 2022.06.21 21:54:55] Assests loaded
+[INFO 2022.06.21 21:57:11] *** Startup ***
+[INFO 2022.06.21 21:57:13] Assests loaded
+[INFO 2022.06.21 22:00:24] *** Startup ***
+[INFO 2022.06.21 22:00:25] Assests loaded
+[INFO 2022.06.21 22:01:18] *** Startup ***
+[INFO 2022.06.21 22:01:19] Assests loaded
+[INFO 2022.06.21 22:02:32] *** Startup ***
+[INFO 2022.06.21 22:02:33] Assests loaded
+[INFO 2022.06.21 22:04:24] *** Startup ***
+[INFO 2022.06.21 22:04:26] Assests loaded
+[INFO 2022.06.21 22:06:44] *** Startup ***
+[INFO 2022.06.21 22:06:46] Assests loaded
+[INFO 2022.06.21 22:07:43] *** Startup ***
+[INFO 2022.06.21 22:07:45] Assests loaded
+[INFO 2022.06.22 10:56:43] *** Startup ***
+[INFO 2022.06.22 10:56:44] Assests loaded
+[INFO 2022.06.22 11:07:24] *** Startup ***
+[INFO 2022.06.22 11:07:25] Assests loaded
+[INFO 2022.06.22 11:08:51] *** Startup ***
+[INFO 2022.06.22 11:08:53] Assests loaded
+[INFO 2022.06.22 11:10:05] *** Startup ***
+[INFO 2022.06.22 11:10:06] Assests loaded
+[INFO 2022.06.22 12:29:29] *** Startup ***
+[INFO 2022.06.22 12:29:31] Assests loaded
+[INFO 2022.06.22 12:31:22] *** Startup ***
+[INFO 2022.06.22 12:31:23] Assests loaded
+[INFO 2022.06.22 13:25:58] *** Startup ***
+[INFO 2022.06.22 13:26:00] Assests loaded
+[INFO 2022.06.22 13:28:09] *** Startup ***
+[INFO 2022.06.22 13:28:10] Assests loaded
+[INFO 2022.06.22 13:32:11] *** Startup ***
+[INFO 2022.06.22 13:32:13] Assests loaded
+[INFO 2022.06.22 13:33:18] *** Startup ***
+[INFO 2022.06.22 13:33:19] Assests loaded

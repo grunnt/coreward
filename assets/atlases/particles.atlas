@@ -1,0 +1,76 @@
+
+particles.png
+size: 512, 128
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+cloud_1
+  rotate: false
+  xy: 2, 2
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+cloud_2
+  rotate: false
+  xy: 68, 68
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+cloud_3
+  rotate: false
+  xy: 118, 68
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+flame_1
+  rotate: false
+  xy: 168, 68
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+flame_2
+  rotate: false
+  xy: 218, 68
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+flame_3
+  rotate: false
+  xy: 268, 68
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+flash_1
+  rotate: false
+  xy: 318, 68
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+flash_2
+  rotate: false
+  xy: 368, 68
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+flash_3
+  rotate: false
+  xy: 418, 68
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+shockwave_1
+  rotate: false
+  xy: 2, 52
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,724 @@
+
+coreward.png
+size: 512,512
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+background/backtile
+  rotate: false
+  xy: 2, 7
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: 1
+background/dust
+  rotate: false
+  xy: 2, 2
+  size: 3, 3
+  orig: 3, 3
+  offset: 0, 0
+  index: 1
+background/dust
+  rotate: false
+  xy: 260, 260
+  size: 3, 3
+  orig: 3, 3
+  offset: 0, 0
+  index: 2
+
+coreward2.png
+size: 256,128
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+editor/com
+  rotate: false
+  xy: 2, 36
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+editor/cot
+  rotate: false
+  xy: 68, 36
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+editor/grid
+  rotate: false
+  xy: 134, 98
+  size: 2, 2
+  orig: 2, 2
+  offset: 0, 0
+  index: -1
+editor/mirror
+  rotate: false
+  xy: 2, 2
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+
+coreward3.png
+size: 256,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+gui/bar-horizontal
+  rotate: false
+  xy: 1, 4
+  size: 6, 6
+  split: 1, 1, 0, 0
+  orig: 6, 6
+  offset: 0, 0
+  index: -1
+gui/button-disabled
+  rotate: false
+  xy: 64, 1
+  size: 30, 30
+  split: 9, 9, 9, 9
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+gui/button-down
+  rotate: false
+  xy: 95, 1
+  size: 30, 30
+  split: 9, 9, 9, 9
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+gui/button-up
+  rotate: false
+  xy: 97, 49
+  size: 30, 30
+  split: 9, 9, 9, 9
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+gui/check-off
+  rotate: false
+  xy: 94, 80
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+gui/check-on
+  rotate: false
+  xy: 64, 32
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+gui/checkbutton-disabled
+  rotate: false
+  xy: 128, 49
+  size: 30, 30
+  split: 9, 9, 9, 9
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+gui/checkbutton-down
+  rotate: false
+  xy: 160, 97
+  size: 30, 30
+  split: 9, 9, 9, 9
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+gui/checkbutton-up
+  rotate: false
+  xy: 191, 97
+  size: 30, 30
+  split: 9, 9, 9, 9
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+gui/cursor
+  rotate: false
+  xy: 16, 19
+  size: 6, 6
+  split: 2, 2, 1, 1
+  orig: 6, 6
+  offset: 0, 0
+  index: -1
+gui/default-pane
+  rotate: false
+  xy: 146, 42
+  size: 6, 6
+  split: 1, 1, 1, 1
+  orig: 6, 6
+  offset: 0, 0
+  index: -1
+gui/default-rect-pad
+  rotate: false
+  xy: 146, 42
+  size: 6, 6
+  split: 1, 1, 1, 1
+  orig: 6, 6
+  offset: 0, 0
+  index: -1
+gui/default-pane-noborder
+  rotate: false
+  xy: 94, 77
+  size: 2, 2
+  split: 0, 0, 0, 0
+  orig: 2, 2
+  offset: 0, 0
+  index: -1
+gui/default-rect
+  rotate: false
+  xy: 16, 12
+  size: 6, 6
+  split: 1, 1, 1, 1
+  orig: 6, 6
+  offset: 0, 0
+  index: -1
+gui/default-rect-down
+  rotate: false
+  xy: 8, 4
+  size: 6, 6
+  split: 1, 1, 1, 1
+  orig: 6, 6
+  offset: 0, 0
+  index: -1
+gui/default-round
+  rotate: false
+  xy: 191, 66
+  size: 30, 30
+  split: 6, 5, 6, 5
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+gui/default-round-disabled
+  rotate: false
+  xy: 222, 97
+  size: 30, 30
+  split: 6, 5, 6, 5
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+gui/default-round-down
+  rotate: false
+  xy: 160, 66
+  size: 30, 30
+  split: 6, 5, 6, 5
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+gui/default-scroll
+  rotate: false
+  xy: 222, 66
+  size: 30, 30
+  split: 2, 2, 2, 2
+  orig: 30, 30
+  offset: 0, 0
+  index: -1
+gui/default-select
+  rotate: false
+  xy: 1, 11
+  size: 14, 14
+  split: 4, 5, 4, 4
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+gui/default-select-selection
+  rotate: false
+  xy: 23, 19
+  size: 6, 6
+  split: 1, 1, 1, 1
+  orig: 6, 6
+  offset: 0, 0
+  index: -1
+gui/default-splitpane
+  rotate: false
+  xy: 23, 12
+  size: 6, 6
+  split: 0, 6, 0, 0
+  orig: 6, 6
+  offset: 0, 0
+  index: -1
+gui/default-splitpane-vertical
+  rotate: false
+  xy: 146, 35
+  size: 6, 6
+  split: 0, 0, 0, 6
+  orig: 6, 6
+  offset: 0, 0
+  index: -1
+gui/selection
+  rotate: false
+  xy: 157, 125
+  size: 2, 2
+  orig: 2, 2
+  offset: 0, 0
+  index: -1
+gui/slider
+  rotate: false
+  xy: 126, 30
+  size: 1, 1
+  split: 0, 0, 0, 0
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+gui/sliderv
+  rotate: false
+  xy: 126, 30
+  size: 1, 1
+  split: 0, 0, 0, 0
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+gui/slider-knob
+  rotate: false
+  xy: 127, 80
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+gui/slider-knob-after
+  rotate: false
+  xy: 64, 65
+  size: 14, 62
+  split: 1, 10, 0, 0
+  orig: 14, 62
+  offset: 0, 0
+  index: -1
+gui/slider-knob-before
+  rotate: false
+  xy: 79, 65
+  size: 14, 62
+  split: 10, 1, 0, 0
+  orig: 14, 62
+  offset: 0, 0
+  index: -1
+gui/sliderv-knob-after
+  rotate: false
+  xy: 1, 26
+  size: 62, 14
+  split: 0, 0, 10, 1
+  orig: 62, 14
+  offset: 0, 0
+  index: -1
+gui/sliderv-knob-before
+  rotate: false
+  xy: 94, 113
+  size: 62, 14
+  split: 0, 0, 1, 10
+  orig: 62, 14
+  offset: 0, 0
+  index: -1
+gui/textfield
+  rotate: false
+  xy: 131, 34
+  size: 14, 14
+  split: 3, 3, 3, 3
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+gui/tree-minus
+  rotate: false
+  xy: 97, 32
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+gui/tree-plus
+  rotate: false
+  xy: 114, 32
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+gui/white
+  rotate: false
+  xy: 253, 125
+  size: 2, 2
+  orig: 2, 2
+  offset: 0, 0
+  index: -1
+gui/window
+  rotate: false
+  xy: 1, 41
+  size: 62, 86
+  split: 11, 14, 30, 13
+  orig: 62, 86
+  offset: 0, 0
+  index: -1
+
+coreward4.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: xy
+modules/armor
+  rotate: false
+  xy: 133, 93
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+modules/armor-t1
+  rotate: false
+  xy: 35, 27
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+modules/bed
+  rotate: false
+  xy: 167, 93
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+modules/buffer
+  rotate: false
+  xy: 69, 27
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+modules/buffere
+  rotate: false
+  xy: 201, 93
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+modules/conduit
+  rotate: false
+  xy: 235, 93
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: 0
+modules/conduit
+  rotate: false
+  xy: 269, 93
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: 1
+modules/conduit
+  rotate: false
+  xy: 303, 93
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: 2
+modules/conduit
+  rotate: false
+  xy: 337, 93
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: 3
+modules/conduit
+  rotate: false
+  xy: 371, 93
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: 4
+modules/conduit
+  rotate: false
+  xy: 405, 93
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: 5
+modules/conduit
+  rotate: false
+  xy: 439, 93
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: 6
+modules/conduit
+  rotate: false
+  xy: 473, 93
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: 7
+modules/conduit
+  rotate: false
+  xy: 133, 59
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: 8
+modules/conduit
+  rotate: false
+  xy: 167, 59
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: 9
+modules/conduit
+  rotate: false
+  xy: 201, 59
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: 10
+modules/conduit
+  rotate: false
+  xy: 235, 59
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: 11
+modules/conduit
+  rotate: false
+  xy: 269, 59
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: 12
+modules/conduit
+  rotate: false
+  xy: 303, 59
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: 13
+modules/conduit
+  rotate: false
+  xy: 337, 59
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: 14
+modules/conduit
+  rotate: false
+  xy: 371, 59
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: 15
+modules/console
+  rotate: false
+  xy: 405, 59
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+modules/core
+  rotate: false
+  xy: 439, 59
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+modules/door
+  rotate: false
+  xy: 473, 59
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+modules/flcannon
+  rotate: false
+  xy: 121, 25
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+modules/pcannon
+  rotate: false
+  xy: 121, 25
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+modules/ptorpedo
+  rotate: false
+  xy: 121, 25
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+modules/flcannon-bullet
+  rotate: false
+  xy: 1, 1
+  size: 16, 8
+  orig: 16, 8
+  offset: 0, 0
+  index: -1
+modules/flcannon-nozzle
+  rotate: false
+  xy: 155, 25
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+modules/generator
+  rotate: false
+  xy: 189, 25
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+modules/hallway
+  rotate: false
+  xy: 223, 25
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+modules/medium-pcannon
+  rotate: false
+  xy: 1, 61
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+modules/medium-turret
+  rotate: false
+  xy: 67, 61
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+modules/pcannon-bullet
+  rotate: false
+  xy: 103, 27
+  size: 16, 32
+  orig: 16, 32
+  offset: 0, 0
+  index: -1
+modules/pcannon-nozzle
+  rotate: false
+  xy: 257, 25
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+modules/small-pcannon
+  rotate: false
+  xy: 257, 25
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+modules/ptorpedo-bullet
+  rotate: false
+  xy: 1, 11
+  size: 32, 48
+  orig: 32, 48
+  offset: 0, 0
+  index: -1
+modules/ptorpedo-nozzle
+  rotate: false
+  xy: 291, 25
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+modules/reactionwheel
+  rotate: false
+  xy: 325, 25
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+modules/small-turret
+  rotate: false
+  xy: 359, 25
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+modules/structure
+  rotate: false
+  xy: 393, 25
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+modules/thruster
+  rotate: false
+  xy: 427, 25
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+
+coreward5.png
+size: 512,128
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+particles/cloud
+  rotate: false
+  xy: 2, 2
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: 1
+particles/cloud
+  rotate: false
+  xy: 68, 68
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: 2
+particles/cloud
+  rotate: false
+  xy: 118, 68
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: 3
+particles/flame
+  rotate: false
+  xy: 168, 68
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: 1
+particles/flame
+  rotate: false
+  xy: 218, 68
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: 2
+particles/flame
+  rotate: false
+  xy: 268, 68
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: 3
+particles/flash
+  rotate: false
+  xy: 318, 68
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: 1
+particles/flash
+  rotate: false
+  xy: 368, 68
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: 2
+particles/flash
+  rotate: false
+  xy: 418, 68
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: 3
+particles/shockwave
+  rotate: false
+  xy: 2, 52
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: 1

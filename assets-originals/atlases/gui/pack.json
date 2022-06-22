@@ -1,0 +1,8 @@
+{
+  filterMin: Linear,
+  filterMag: Linear,
+  duplicatePadding: false,
+  paddingX: 1,
+  paddingY: 1,
+  "useIndexes": false
+}

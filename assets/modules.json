@@ -1,0 +1,190 @@
+[
+{
+	code: "COR",
+	name: "Quantum Singularity Warp Core",
+	texture: "modules/core",
+	hitpoints: 500,
+	density: 1,
+	core: true,
+	commonCost: 100,
+	rareCost: 100,
+	exoticCost: 100,
+	effectDestroyed: module-explosion
+},
+{
+	code: "AMR",
+	name: "Armor",
+	texture: "modules/armor",
+	hitpoints: 500,
+	density: 2,
+	commonCost: 10,
+	effectDestroyed: module-explosion
+},
+{
+	code: "AMR-T1",
+	name: "Armor corner 1",
+	texture: "modules/armor-t1",
+	triangular: true,
+	hitpoints: 250,
+	density: 2,
+	commonCost: 10,
+	effectDestroyed: module-explosion
+},
+{
+	code: "STR",
+	name: "Structure",
+	texture: "modules/structure",
+	hitpoints: 150,
+	density: 0.4,
+	commonCost: 10,
+	effectDestroyed: module-explosion
+},
+{
+	code: "STC",
+	name: "Structure conduit",
+	texture: "modules/structure",
+	hitpoints: 100,
+	density: 0.8,
+	conduit: {
+		texture: "modules/conduit"
+	},
+	commonCost: 10,
+	effectDestroyed: module-explosion
+},
+{
+	code: "BFR",
+	name: "Buffer",
+	texture: "modules/buffer",
+	hitpoints: 50,
+	density: 1,
+	buffer: {
+		texture: "modules/buffere",
+		capacity: 100
+	},
+	commonCost: 10,
+	effectDestroyed: module-explosion
+},
+{
+	code: "GNR",
+	name: "Generator",
+	texture: "modules/generator",
+	hitpoints: 50,
+	density: 1,
+	producer: {
+		energyPerSecond: 10
+	},
+	commonCost: 10,
+	effectDestroyed: module-explosion
+},
+{
+	code: "RWL",
+	name: "Reactionwheel",
+	texture: "modules/reactionwheel",
+	hitpoints: 50,
+	density: 1,
+	reactionWheel: {
+		force: 10
+	},
+	consumer: {
+		energyPerSecond: 5,
+		localBufferSize: 0
+	},
+	commonCost: 10,
+	effectDestroyed: module-explosion
+},
+{
+	code: "TSR",
+	name: "Thruster",
+	texture: "modules/thruster",
+	hitpoints: 400,
+	density: 1,
+	thruster: {
+		force: 10
+	},
+	consumer: {
+		energyPerSecond: 10,
+		localBufferSize: 0
+	},
+	commonCost: 10,
+	effectDestroyed: module-explosion
+},
+{
+	code: "PCN",
+	name: "Particle cannon",
+	texture: "modules/pcannon",
+	hitpoints: 150,
+	density: 1,
+	weapon: {
+		nozzleTexture: "modules/pcannon-nozzle",
+		bulletTexture: "modules/pcannon-bullet",
+		effectNozzleFlash: "pcannon-muzzle-flash",
+		effectHit: "hit",
+		damage: 10,
+		speed: 0.6,
+		lifeTime: 1,
+		accuracy: 0.9,
+		aim: 360,
+		aimSpeed: 90,
+		burst: 1,
+		burstInterval: 0.1
+	},
+	consumer: {
+		energyPerSecond: 15,
+		localBufferSize: 5
+	},
+	commonCost: 10,
+	effectDestroyed: module-explosion
+},
+{
+	code: "PTP",
+	name: "Plasma torpedo",
+	texture: "modules/ptorpedo",
+	hitpoints: 150,
+	density: 1,
+	weapon: {
+		nozzleTexture: "modules/ptorpedo-nozzle",
+		bulletTexture: "modules/ptorpedo-bullet",
+		effectNozzleFlash: "ptorpedo-muzzle-flash",
+		effectHit: "hit",
+		damage: 300,
+		speed: 0.2,
+		lifeTime: 7,
+		accuracy: 0.99,
+		aim: 45,
+		aimSpeed: 90
+	},
+	consumer: {
+		energyPerSecond: 30,
+		localBufferSize: 120
+	},
+	commonCost: 10,
+	effectDestroyed: module-explosion
+},
+{
+	code: "FLK",
+	name: "Flak cannon",
+	texture: "modules/flcannon",
+	hitpoints: 150,
+	density: 1,
+	weapon: {
+		nozzleTexture: "modules/flcannon-nozzle",
+		bulletTexture: "modules/flcannon-bullet",
+		effectNozzleFlash: "flak-muzzle-flash",
+		effectHit: "hit",
+		damage: 40,
+		speed: 0.35,
+		lifeTime: 0.7,
+		accuracy: 0.75,
+		aim: 180,
+		aimSpeed: 120,
+		burst: 6,
+		burstInterval: 0.05
+	},
+	consumer: {
+		energyPerSecond: 50,
+		localBufferSize: 50
+	},
+	commonCost: 10,
+	effectDestroyed: module-explosion
+}
+]

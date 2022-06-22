@@ -1,0 +1,65 @@
+{        
+com.badlogic.gdx.graphics.g2d.BitmapFont: { default-font: { file: azertype14.fnt } },
+com.badlogic.gdx.graphics.Color: {
+	green: { a: 1, b: 0, g: 1, r: 0 },
+	white: { a: 1, b: 1, g: 1, r: 1 },
+	red: { a: 1, b: 0, g: 0, r: 1 },
+	black: { a: 1, b: 0, g: 0, r: 0 },
+	cyan: { a: 1, b: 1, g: 1, r: 0 }
+},
+com.badlogic.gdx.scenes.scene2d.ui.Skin$TintedDrawable: {
+	dialogDim: { name: gui/white, color: { r: 0, g: 0, b: 0, a: 0.45 } }
+},
+com.badlogic.gdx.scenes.scene2d.ui.Button$ButtonStyle: {
+	default: { down: gui/button-down, up: gui/button-up, disabled: gui/button-disabled },
+	toggle: { down: gui/checkbutton-down, checked: gui/checkbutton-down, up: gui/checkbutton-up, disabled: gui/checkbutton-disabled }
+},
+com.badlogic.gdx.scenes.scene2d.ui.ImageButton$ImageButtonStyle: {
+	default: { down: gui/button-down, up: gui/button-up, disabled: gui/button-disabled },
+	toggle: { down: gui/checkbutton-down, checked: gui/checkbutton-down, up: gui/checkbutton-up, disabled: gui/checkbutton-disabled }
+},
+com.badlogic.gdx.scenes.scene2d.ui.TextButton$TextButtonStyle: {
+	default: { down: gui/button-down, checked: gui/button-up, up: gui/button-up, disabled: gui/button-disabled, font: default-font },
+	toggle: { down: gui/checkbutton-down, checked: gui/checkbutton-down, up: gui/checkbutton-up, disabled: gui/checkbutton-disabled, font: default-font }
+},
+com.badlogic.gdx.scenes.scene2d.ui.SelectBox$SelectBoxStyle: {
+   default: {
+      font: default-font, fontColor: white, background: gui/default-select,
+      scrollStyle: { background: gui/default-rect },
+      listStyle: { font: default-font, selection: gui/default-select-selection }
+   }
+},
+com.badlogic.gdx.scenes.scene2d.ui.SplitPane$SplitPaneStyle: {
+	default-vertical: { handle: gui/default-splitpane-vertical },
+	default-horizontal: { handle: gui/default-splitpane }
+},
+com.badlogic.gdx.scenes.scene2d.ui.ScrollPane$ScrollPaneStyle: {
+	default: { vScroll: gui/default-scroll, hScrollKnob: gui/default-round, background: gui/default-rect, hScroll: gui/default-scroll, vScrollKnob: gui/default-round }
+},
+com.badlogic.gdx.scenes.scene2d.ui.Window$WindowStyle: {
+	default: { titleFont: default-font, background: gui/window, titleFontColor: white },
+	dialog: { titleFont: default-font, background: gui/window, titleFontColor: white, stageBackground: dialogDim }
+},
+com.badlogic.gdx.scenes.scene2d.ui.Slider$SliderStyle: {
+	default-horizontal: { background: gui/slider, knob: gui/slider-knob, knobBefore: gui/slider-knob-before, knobAfter: gui/slider-knob-after },
+	default-vertical: { background: gui/sliderv, knob: gui/slider-knob, knobBefore: gui/sliderv-knob-before, knobAfter: gui/sliderv-knob-after }
+},
+com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle: {
+	default: { font: default-font, fontColor: white }
+},
+com.badlogic.gdx.scenes.scene2d.ui.TextField$TextFieldStyle: {
+	default: { selection: gui/selection, background: gui/textfield, font: default-font, fontColor: white, cursor: gui/cursor }
+},
+com.badlogic.gdx.scenes.scene2d.ui.CheckBox$CheckBoxStyle: {
+	default: { checkboxOn: gui/check-on, checkboxOff: gui/check-off, font: default-font, fontColor: white }
+},
+com.badlogic.gdx.scenes.scene2d.ui.List$ListStyle: {
+	default: { fontColorUnselected: white, selection: gui/default-rect-pad, fontColorSelected: white, font: default-font }
+},
+com.badlogic.gdx.scenes.scene2d.ui.Touchpad$TouchpadStyle: {
+	default: { background: gui/default-pane, knob: gui/default-round }
+},
+com.badlogic.gdx.scenes.scene2d.ui.Tree$TreeStyle: {
+	default: { minus: gui/tree-minus, plus: gui/tree-plus, selection: gui/default-select-selection }
+}
+}

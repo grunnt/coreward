@@ -1,0 +1,8 @@
+{
+  wrapX: Repeat,
+  wrapY: Repeat,
+  filterMin: Linear,
+  filterMag: Linear,
+  duplicatePadding: true,
+  "useIndexes": false
+}

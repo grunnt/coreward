@@ -1,0 +1,300 @@
+
+modules.png
+size: 512, 128
+format: RGBA8888
+filter: Linear, Linear
+repeat: xy
+armor
+  rotate: false
+  xy: 133, 93
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+armor-t1
+  rotate: false
+  xy: 35, 27
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+bed
+  rotate: false
+  xy: 167, 93
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+buffer
+  rotate: false
+  xy: 69, 27
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+buffere
+  rotate: false
+  xy: 201, 93
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+conduit_0
+  rotate: false
+  xy: 235, 93
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+conduit_1
+  rotate: false
+  xy: 269, 93
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+conduit_10
+  rotate: false
+  xy: 201, 59
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+conduit_11
+  rotate: false
+  xy: 235, 59
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+conduit_12
+  rotate: false
+  xy: 269, 59
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+conduit_13
+  rotate: false
+  xy: 303, 59
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+conduit_14
+  rotate: false
+  xy: 337, 59
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+conduit_15
+  rotate: false
+  xy: 371, 59
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+conduit_2
+  rotate: false
+  xy: 303, 93
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+conduit_3
+  rotate: false
+  xy: 337, 93
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+conduit_4
+  rotate: false
+  xy: 371, 93
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+conduit_5
+  rotate: false
+  xy: 405, 93
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+conduit_6
+  rotate: false
+  xy: 439, 93
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+conduit_7
+  rotate: false
+  xy: 473, 93
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+conduit_8
+  rotate: false
+  xy: 133, 59
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+conduit_9
+  rotate: false
+  xy: 167, 59
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+console
+  rotate: false
+  xy: 405, 59
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+core
+  rotate: false
+  xy: 439, 59
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+door
+  rotate: false
+  xy: 473, 59
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+flcannon
+  rotate: false
+  xy: 121, 25
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+pcannon
+  rotate: false
+  xy: 121, 25
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+ptorpedo
+  rotate: false
+  xy: 121, 25
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+flcannon-bullet
+  rotate: false
+  xy: 1, 1
+  size: 16, 8
+  orig: 16, 8
+  offset: 0, 0
+  index: -1
+flcannon-nozzle
+  rotate: false
+  xy: 155, 25
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+generator
+  rotate: false
+  xy: 189, 25
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+hallway
+  rotate: false
+  xy: 223, 25
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+medium-pcannon
+  rotate: false
+  xy: 1, 61
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+medium-turret
+  rotate: false
+  xy: 67, 61
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+pcannon-bullet
+  rotate: false
+  xy: 103, 27
+  size: 16, 32
+  orig: 16, 32
+  offset: 0, 0
+  index: -1
+pcannon-nozzle
+  rotate: false
+  xy: 257, 25
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+small-pcannon
+  rotate: false
+  xy: 257, 25
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+ptorpedo-bullet
+  rotate: false
+  xy: 1, 11
+  size: 32, 48
+  orig: 32, 48
+  offset: 0, 0
+  index: -1
+ptorpedo-nozzle
+  rotate: false
+  xy: 291, 25
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+reactionwheel
+  rotate: false
+  xy: 325, 25
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+small-turret
+  rotate: false
+  xy: 359, 25
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+structure
+  rotate: false
+  xy: 393, 25
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+thruster
+  rotate: false
+  xy: 427, 25
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
