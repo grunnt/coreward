@@ -1,0 +1,2 @@
+# coreward
+Coreward, fellow sentients!
