@@ -11,5 +11,6 @@ public class WeaponDesign {
   public float aim;
   public float aimSpeed;
   public int burst;
+  public int areaOfEffect;
   public float burstInterval;
 }

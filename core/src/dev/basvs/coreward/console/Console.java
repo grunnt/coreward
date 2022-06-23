@@ -1,10 +1,12 @@
 package dev.basvs.coreward.console;
 
+import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Dialog;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.TextArea;
 import com.badlogic.gdx.scenes.scene2d.ui.TextField;
+import com.badlogic.gdx.scenes.scene2d.ui.TextField.TextFieldFilter;
 import com.badlogic.gdx.scenes.scene2d.ui.TextField.TextFieldListener;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.StringBuilder;
@@ -21,37 +23,37 @@ public class Console extends Dialog {
   StringBuilder sb;
   String lastCommand = "";
 
+  private Therapist therapist = new Therapist();
+
   public Console(Skin skin) {
     super("Console", skin);
     setFillParent(true);
     attrs = new Array<AbstractAttr>();
     sb = new StringBuilder("> Welcome to the console.\n");
+    sb.append("> Type \"get\" to get a list of attributes to set.\n");
+    sb.append("> Type \"set <attribute> <value>\" to change an attribute value.\n");
     textArea = new TextArea(sb.toString(), skin);
     textArea.setFocusTraversal(false);
     getContentTable().add(textArea).expand().fill();
-    commandField = new TextField("< ", skin);
-    commandField.setTextFieldListener(new TextFieldListener() {
-
-      @Override
-      public void keyTyped(TextField textField, char key) {
-        if ((key == '\r' || key == '\n')) {
-          String command = textField.getText().trim();
-          if (command.startsWith("<")) {
-            command = command.substring(1).trim();
-          }
-          lastCommand = command;
-          String response = processCommand(command);
-          sb.append("> ");
-          sb.append(response);
-          sb.append("\n");
-          textArea.setText(sb.toString());
-          textArea.setCursorPosition(textArea.getText().length());
-          textField.setText("< ");
-          textField.setCursorPosition(textField.getText().length());
-        } else if (key == 18) {
-          textField.setText("< " + lastCommand);
-          textField.setCursorPosition(textField.getText().length());
-        }
+    commandField = new TextField("", skin);
+    commandField.setTextFieldFilter((textField, c) -> c != '`');
+    commandField.setTextFieldListener((textField, key) -> {
+      if ((key == '\r' || key == '\n') && !textField.getText().isEmpty()) {
+        String command = textField.getText().trim();
+        lastCommand = command;
+        String response = processCommand(command);
+        sb.append(command);
+        sb.append("\n");
+        sb.append("> ");
+        sb.append(response);
+        sb.append("\n");
+        textArea.setText(sb.toString());
+        textArea.setCursorPosition(textArea.getText().length());
+        textField.setText("");
+        textField.setCursorPosition(textField.getText().length());
+      } else if (key == 18) {
+        textField.setText(lastCommand);
+        textField.setCursorPosition(textField.getText().length());
       }
     });
     getButtonTable().add(commandField).expand().fill().prefWidth(1024);
@@ -105,7 +107,7 @@ public class Console extends Dialog {
           }
         }
       } else {
-        response = "I'm sorry but I'm afraid I cannot do: " + command;
+        response = therapist.getReply(command);
       }
     } catch (Exception e) {
       response = "I'm sorry but I'm afraid an error has occurred.";

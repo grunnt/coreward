@@ -31,7 +31,7 @@ public class Constants {
   public static final File DESIGNS_EXTENSION = new File("json");
   public static final File DESIGNS_DEFAULT = new File("default");
 
-  public static final int CONSOLE_KEY = Keys.PAGE_DOWN;
+  public static final int CONSOLE_KEY = Keys.GRAVE;
 
   public static final boolean EFFECT_MAKER = false; // TODO make console command
 

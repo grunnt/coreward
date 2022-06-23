@@ -17,7 +17,6 @@ import com.badlogic.gdx.scenes.scene2d.ui.Button;
 import com.badlogic.gdx.scenes.scene2d.ui.ButtonGroup;
 import com.badlogic.gdx.scenes.scene2d.ui.CheckBox;
 import com.badlogic.gdx.scenes.scene2d.ui.Dialog;
-import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
@@ -30,7 +29,7 @@ import com.badlogic.gdx.utils.JsonValue;
 import dev.basvs.coreward.Constants;
 import dev.basvs.coreward.combat.CombatScreen;
 import dev.basvs.coreward.design.modules.ModuleDesign;
-import dev.basvs.lib.DoubleTextureRegionDrawable;
+import dev.basvs.coreward.meta.PartInventory;
 import dev.basvs.lib.Logging;
 import dev.basvs.lib.game.AbstractGame;
 import dev.basvs.lib.game.AbstractScreen;
@@ -39,7 +38,6 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.logging.Level;
 
@@ -56,7 +54,7 @@ public class ShipDesignScreen extends AbstractScreen {
   private final Json json;
   private final TextureAtlas atlas;
   private final Vector2 com = new Vector2(), cotF = new Vector2(), cotB = new Vector2(), cotL = new Vector2(), cotR = new Vector2();
-  private ButtonGroup moduleButtons;
+  private ButtonGroup<ModuleSelectButton> moduleButtons;
   private CheckBox comCheckBox;
   private CheckBox cotCheckBox;
   private CheckBox mirrorCheckBox;
@@ -65,6 +63,7 @@ public class ShipDesignScreen extends AbstractScreen {
   private ShipDesign design;
   private int direction = 0;
   private boolean leftDown, rightDown, middleDown;
+  private PartInventory inventory;
 
   public ShipDesignScreen(AbstractGame game) {
     super(game);
@@ -111,12 +110,26 @@ public class ShipDesignScreen extends AbstractScreen {
     modules = json.fromJson(ArrayList.class, ModuleDesign.class,
         Gdx.files.internal("modules.json"));
 
+    resetInventory();
+
     setupGui();
 
     requirements = new Requirements();
-    design = loadDesign(new File(Constants.DESIGNS_DIRECTORY, Constants.DESIGNS_DEFAULT + "."
-        + Constants.DESIGNS_EXTENSION));
+    design = new ShipDesign("default", Constants.DESIGNS_SIZE, Constants.DESIGNS_SIZE);
     doCalculations(design);
+  }
+
+  private void resetInventory() {
+    inventory = new PartInventory();
+    inventory.add("AMR", 8);
+    inventory.add("AMR-T1", 8);
+    inventory.add("STR", 8);
+    inventory.add("STC", 8);
+    inventory.add("BFR", 2);
+    inventory.add("GNR", 2);
+    inventory.add("RWL", 2);
+    inventory.add("TSR", 4);
+    inventory.add("PCN", 2);
   }
 
   ShipDesign loadDesign(File fileName) {
@@ -159,24 +172,8 @@ public class ShipDesignScreen extends AbstractScreen {
     moduleButtons.setMinCheckCount(0);
     int col = 0;
     for (ModuleDesign module : modules) {
-      Button moduleButton;
-      if (module.conduit != null) {
-        DoubleTextureRegionDrawable drawable = new DoubleTextureRegionDrawable(
-            atlas.findRegion(module.texture),
-            atlas.findRegion(module.conduit.texture, 0));
-        moduleButton = new Button(new Image(drawable), game.guiSkin, "toggle");
-      } else if (module.weapon != null) {
-        DoubleTextureRegionDrawable drawable = new DoubleTextureRegionDrawable(
-            atlas.findRegion(module.texture),
-            atlas.findRegion(module.weapon.nozzleTexture));
-        moduleButton = new Button(new Image(drawable), game.guiSkin, "toggle");
-      } else {
-        moduleButton = new Button(new Image(atlas.findRegion(module.texture)), game.guiSkin,
-            "toggle");
-      }
-      moduleButton.setDisabled(!module.core);
+      ModuleSelectButton moduleButton = new ModuleSelectButton(module, atlas, game.guiSkin);
       moduleMenu.add(moduleButton);
-      moduleButton.setUserObject(module);
       moduleButtons.add(moduleButton);
       if (++col >= 2) {
         moduleMenu.row();
@@ -198,6 +195,7 @@ public class ShipDesignScreen extends AbstractScreen {
           protected void result(Object object) {
             if ((Boolean) object) {
               design = new ShipDesign("default", Constants.DESIGNS_SIZE, Constants.DESIGNS_SIZE);
+              resetInventory();
               Button checked = moduleButtons.getChecked();
               if (checked != null) {
                 checked.setChecked(false);
@@ -341,27 +339,30 @@ public class ShipDesignScreen extends AbstractScreen {
     }
     // Set button status depending on whether a core module is in the design
     for (int i = 0; i < moduleButtons.getButtons().size; i++) {
-      Button btn = (Button) moduleButtons.getButtons().get(i);
-      ModuleDesign module = (ModuleDesign) btn.getUserObject();
+      ModuleSelectButton btn = moduleButtons.getButtons().get(i);
+      ModuleDesign module = btn.getModule();
+      int count = inventory.count(module.code);
       if (corePlaced) {
-        btn.setDisabled(module.core);
+        btn.setDisabled(module.core || count == 0);
       } else {
         btn.setDisabled(!module.core);
       }
+      btn.setCount(count);
     }
     // Handle module placement / removal
     if (leftDown) {
       int gridX = toGridX(inputWorldPos.x);
       int gridY = toGridY(inputWorldPos.y);
       if (gridX != -1 && gridY != -1) {
-        Button checked = moduleButtons.getChecked();
+        ModuleSelectButton checked = moduleButtons.getChecked();
         if (checked != null) {
-          ModuleDesign module = (ModuleDesign) moduleButtons.getChecked().getUserObject();
+          ModuleDesign module = checked.getModule();
           if (isValidPlacement(gridX, gridY, module)) {
             DesignCell cell = design.cells[gridX][gridY];
             cell.module = module;
             cell.direction = direction;
             setReserved(gridX, gridY, direction, module.freeSpace, true);
+            inventory.remove(module.code);
             if (module.core) {
               checked.setChecked(false);
             } else {
@@ -387,6 +388,7 @@ public class ShipDesignScreen extends AbstractScreen {
                       }
                     }
                     setReserved(mirrorX, gridY, mCell.direction, module.freeSpace, true);
+                    inventory.remove(module.code);
                   }
                 }
               }
@@ -409,12 +411,14 @@ public class ShipDesignScreen extends AbstractScreen {
             if (gridX != design.width / 2) {
               int mirrorX = design.width / 2 - (gridX - design.width / 2);
               if (design.cells[mirrorX][gridY].module != null) {
+                inventory.add(design.cells[mirrorX][gridY].module.code);
                 setReserved(mirrorX, gridY, design.cells[mirrorX][gridY].direction,
                     design.cells[mirrorX][gridY].module.freeSpace, false);
                 design.cells[mirrorX][gridY].clear();
               }
             }
           }
+          inventory.add(design.cells[gridX][gridY].module.code);
           setReserved(gridX, gridY, design.cells[gridX][gridY].direction,
               design.cells[gridX][gridY].module.freeSpace, false);
           design.cells[gridX][gridY].clear();
@@ -565,7 +569,7 @@ public class ShipDesignScreen extends AbstractScreen {
     // Draw currently selected module
     // TODO move to separate method
     if (moduleButtons.getChecked() != null) {
-      ModuleDesign module = (ModuleDesign) moduleButtons.getChecked().getUserObject();
+      ModuleDesign module = (ModuleDesign) moduleButtons.getChecked().getModule();
       TextureRegion tex = atlas.findRegion(module.texture);
       int x = toGridX(inputWorldPos.x);
       int y = toGridY(inputWorldPos.y);

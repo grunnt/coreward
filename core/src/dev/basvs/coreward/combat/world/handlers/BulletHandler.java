@@ -133,7 +133,8 @@ public class BulletHandler {
 
       // Set the bullet properties
       WeaponDesign pWeapon = cell.module.design.weapon;
-      bullet.set(pWeapon.damage, pWeapon.lifeTime, cell.module.bulletTexture, bulletBody, ship,
+      bullet.set(pWeapon.damage, pWeapon.areaOfEffect, pWeapon.lifeTime, cell.module.bulletTexture,
+          bulletBody, ship,
           pWeapon.effectHit);
 
       return true;

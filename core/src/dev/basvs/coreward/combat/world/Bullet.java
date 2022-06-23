@@ -10,17 +10,20 @@ public class Bullet {
   public boolean active;
   public Body body;
   public float damage;
+  public int areaOfEffect;
   public TextureRegion texture;
   public String effectHit;
   public Vector2 lastPosition = new Vector2();
   public float lifeTime;
   public Ship source;
 
-  public void set(float damage, float lifeTime, TextureRegion texture, Body body, Ship source,
+  public void set(float damage, int areaOfEffect, float lifeTime, TextureRegion texture, Body body,
+      Ship source,
       String effectHit) {
     active = true;
     lastPosition.set(body.getPosition());
     this.damage = damage;
+    this.areaOfEffect = areaOfEffect;
     this.lifeTime = lifeTime;
     this.texture = texture;
     this.body = body;

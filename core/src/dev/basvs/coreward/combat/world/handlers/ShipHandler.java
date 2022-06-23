@@ -98,7 +98,7 @@ public class ShipHandler {
           }
         }
         // Weapon is ready and controlled to fire?
-        if (cell.isPrimaryActive()) {
+        if (cell.isPrimaryActive() && angleDelta < 5f) {
           if (world.weaponHandler.fireBullet(ship, cell, false)) {
             // Consume buffered energy
             cell.module.localBuffered = 0f;

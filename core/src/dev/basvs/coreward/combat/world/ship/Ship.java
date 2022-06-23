@@ -11,6 +11,7 @@ import dev.basvs.coreward.combat.world.Alignment;
 import dev.basvs.coreward.combat.world.GameWorld;
 import dev.basvs.coreward.design.ShipDesign;
 import dev.basvs.coreward.design.modules.ModuleDesign;
+import java.util.ArrayDeque;
 
 public class Ship {
 
@@ -267,7 +268,7 @@ public class Ship {
     }
   }
 
-  void addSurroundingCells(Array<Cell> cells, int gridX, int gridY) {
+  public void addSurroundingCells(Array<Cell> cells, int gridX, int gridY) {
     addCellIfExists(cells, gridX - 1, gridY);
     addCellIfExists(cells, gridX + 1, gridY);
     addCellIfExists(cells, gridX, gridY - 1);
@@ -275,6 +276,22 @@ public class Ship {
   }
 
   void addCellIfExists(Array<Cell> cells, int gridX, int gridY) {
+    if (gridX > 0 && gridX < design.width && gridY > 0 && gridY < design.height) {
+      Cell cell = this.cells[gridX][gridY];
+      if (cell.isAlive()) {
+        cells.add(cell);
+      }
+    }
+  }
+
+  public void addSurroundingCellToQueue(ArrayDeque<Cell> cells, int gridX, int gridY) {
+    addCellIfExistsToQueue(cells, gridX - 1, gridY);
+    addCellIfExistsToQueue(cells, gridX + 1, gridY);
+    addCellIfExistsToQueue(cells, gridX, gridY - 1);
+    addCellIfExistsToQueue(cells, gridX, gridY + 1);
+  }
+
+  void addCellIfExistsToQueue(ArrayDeque<Cell> cells, int gridX, int gridY) {
     if (gridX > 0 && gridX < design.width && gridY > 0 && gridY < design.height) {
       Cell cell = this.cells[gridX][gridY];
       if (cell.isAlive()) {

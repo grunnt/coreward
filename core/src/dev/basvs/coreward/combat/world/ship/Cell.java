@@ -2,7 +2,6 @@ package dev.basvs.coreward.combat.world.ship;
 
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Vector2;
-import dev.basvs.coreward.Attributes;
 import dev.basvs.coreward.combat.effects.ParticleEmitterSource;
 
 public class Cell implements ParticleEmitterSource {

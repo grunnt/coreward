@@ -55,7 +55,7 @@
 	code: "BFR",
 	name: "Buffer",
 	texture: "modules/buffer",
-	hitpoints: 50,
+	hitpoints: 100,
 	density: 1,
 	buffer: {
 		texture: "modules/buffere",
@@ -68,7 +68,7 @@
 	code: "GNR",
 	name: "Generator",
 	texture: "modules/generator",
-	hitpoints: 50,
+	hitpoints: 100,
 	density: 1,
 	producer: {
 		energyPerSecond: 10
@@ -80,7 +80,7 @@
 	code: "RWL",
 	name: "Reactionwheel",
 	texture: "modules/reactionwheel",
-	hitpoints: 50,
+	hitpoints: 100,
 	density: 1,
 	reactionWheel: {
 		force: 10
@@ -119,18 +119,19 @@
 		bulletTexture: "modules/pcannon-bullet",
 		effectNozzleFlash: "pcannon-muzzle-flash",
 		effectHit: "hit",
-		damage: 10,
+		damage: 30,
 		speed: 0.6,
 		lifeTime: 1,
 		accuracy: 0.9,
 		aim: 360,
 		aimSpeed: 90,
-		burst: 1,
-		burstInterval: 0.1
+		burst: 5,
+		burstInterval: 0.1,
+		areaOfEffect: 3
 	},
 	consumer: {
-		energyPerSecond: 15,
-		localBufferSize: 5
+		energyPerSecond: 10,
+		localBufferSize: 30
 	},
 	commonCost: 10,
 	effectDestroyed: module-explosion
@@ -146,16 +147,17 @@
 		bulletTexture: "modules/ptorpedo-bullet",
 		effectNozzleFlash: "ptorpedo-muzzle-flash",
 		effectHit: "hit",
-		damage: 300,
-		speed: 0.2,
+		damage: 800,
+		speed: 0.3,
 		lifeTime: 7,
 		accuracy: 0.99,
 		aim: 45,
-		aimSpeed: 90
+		aimSpeed: 90,
+		areaOfEffect: 0
 	},
 	consumer: {
 		energyPerSecond: 30,
-		localBufferSize: 120
+		localBufferSize: 240
 	},
 	commonCost: 10,
 	effectDestroyed: module-explosion
@@ -170,7 +172,7 @@
 		nozzleTexture: "modules/flcannon-nozzle",
 		bulletTexture: "modules/flcannon-bullet",
 		effectNozzleFlash: "flak-muzzle-flash",
-		effectHit: "hit",
+		effectHit: "module-explosion",
 		damage: 40,
 		speed: 0.35,
 		lifeTime: 0.7,
@@ -178,7 +180,8 @@
 		aim: 180,
 		aimSpeed: 120,
 		burst: 6,
-		burstInterval: 0.05
+		burstInterval: 0.05,
+		areaOfEffect: 0
 	},
 	consumer: {
 		energyPerSecond: 50,
